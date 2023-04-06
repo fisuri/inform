@@ -1,20 +1,22 @@
-def formula(x, a0, b0, b1, y_prev=0):
-    y = b1*x + b0*x*y_prev - a0*y_prev
-    return y
+import random
 
 
-a0 = 0.5
-b0 = 0.3
-b1 = 0.2
+class FormulaCalculator:
+    def __init__(self, a0, b0, b1):
+        self.a0 = a0
+        self.b0 = b0
+        self.b1 = b1
+        self.y_prev = 0
+        self.x_prev = 0
 
-x1 = 1
-y1 = formula(x1, a0, b0, b1)
-print(y1)
+    def calculate(self, x):
+        y = self.b1 * self.x_prev + self.b0 * x - self.a0 * self.y_prev
+        self.x_prev = x
+        self.y_prev = y
+        return y
 
-x2 = 2
-y2 = formula(x2, a0, b0, b1, y1)
-print(y2)
 
-x3 = 3
-y3 = formula(x3, a0, b0, b1, y2)
-print(y3)
+calculator = FormulaCalculator(1, 2, 3)
+x = float(input("Введите значение переменной x: "))
+y = calculator.calculate(x)
+print("Значение выходной переменной y:", y)
