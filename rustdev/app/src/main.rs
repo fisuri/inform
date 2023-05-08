@@ -2,10 +2,12 @@ use std::io;
 
 fn main() {
     loop {
-        let name_str = read_volue("Введите ваше имя");
-        let age_str = read_volue("Введите ваш возраст");
-        let wallet_str = read_volue("Введите ваше количество денег в кошельке");
+        // Стринговые переменные для записи в них значений пользователя
+        let name_str = Pupil::read_volue("Введите ваше имя")
+        let age_str = Pupil::read_volue("Введите ваш возраст");
+        let wallet_str = Pupil::read_volue("Введите ваше количество денег в кошельке");
 
+        // Конвертация стринговых переменных в другой тип данных
         let name: String = match name_str.trim().parse() {
             Ok(num) => num,
             Err(_) => continue,
@@ -21,6 +23,7 @@ fn main() {
             Err(_) => continue,
         };
 
+        // Обращение к структуре Pupil
         let person = Pupil { name, age, wallet };
         let person1 = Pupil {
             name: person.name.clone(),
@@ -39,15 +42,18 @@ fn main() {
     }
 }
 
-fn read_volue(prompt: &str) -> String {
-    println!("{}", prompt);
+impl Pupil {
+    // Записывает значение пользователя
+    fn read_volue(prompt: &str) -> String {
+        println!("{}", prompt);
 
-    let mut volue: String = String::new();
+        let mut volue: String = String::new();
 
-    io::stdin()
-        .read_line(&mut volue)
-        .expect("Не удалось прочитать строку");
-    volue.trim().to_string()
+        io::stdin()
+            .read_line(&mut volue)
+            .expect("Не удалось прочитать строку");
+        volue.trim().to_string()
+    }
 }
 
 #[derive(Debug)]
