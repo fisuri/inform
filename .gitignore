@@ -1,3 +1,3 @@
 package-lock.json
-rustdev/app/target
 rustdev/app*/target
+rustdev/guessing_game/target
