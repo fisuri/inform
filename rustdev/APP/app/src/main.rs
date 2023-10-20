@@ -3,7 +3,7 @@ use std::io;
 fn main() {
     loop {
         // Стринговые переменные для записи в них значений пользователя
-        let name_str = Pupil::read_volue("Введите ваше имя")
+        let name_str = Pupil::read_volue("Введите ваше имя");
         let age_str = Pupil::read_volue("Введите ваш возраст");
         let wallet_str = Pupil::read_volue("Введите ваше количество денег в кошельке");
 
