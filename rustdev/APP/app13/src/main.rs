@@ -21,7 +21,7 @@ fn main() {
     );
 
     let mul = |a: i32| a + input("Введите число: ".to_string());
-    println!("{}", mul(5));
+    println!("{}", mul(5));14
 }
 
 /*fn is_even(n: i32) -> bool {
