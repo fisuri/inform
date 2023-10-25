@@ -1,13 +1,13 @@
 use std::io;
 
 fn main() {
-    let x = input();
-    let y = input();
+    let x = input("Введите первое число: ".to_string());
+    let y = input("Введите второе число: ".to_string());
 
-    let x: i8 = x
+    let x: f64 = x
         .parse()
         .expect("Не удалось запарсить значение, напишите цифры");
-    let y: i8 = y
+    let y: f64 = y
         .parse()
         .expect("Не удалось запарсить значение, напишите цифры");
 
@@ -16,7 +16,9 @@ fn main() {
     println!("{} + {} = {}", x, y, r);
 }
 
-fn input() -> String {
+fn input(prompt: String) -> String {
+    println!("{prompt}");
+
     let mut s = String::new();
     io::stdin()
         .read_line(&mut s)
