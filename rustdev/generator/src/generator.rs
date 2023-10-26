@@ -1,19 +1,20 @@
 use std::f64::consts::PI;
 
-pub fn gen(delta_time: f64, time_limit: f64, freq: f64, bit: u8) -> (Vec<f64>, Vec<f64>) {
-    let n = 100;
-    let mut t: Vec<f64> = vec![0., n as f64];
-    let mut adc_value: Vec<f64> = vec![0., n as f64];
+pub fn gen(time_limit: f64, delta_time: f64) -> (Vec<f64>, Vec<f64>) {
+    let n = (time_limit / delta_time).round() as usize;
+    let mut time = vec![0.; n + 1];
+    let mut adc_val = vec![0.; n + 1];
 
-    for i in 0..n {
+    for i in 0..=n {
         if i == 0 {
-            t[i] = 0.0;
+            time[i] = 0.0;
         } else {
-            t[i] = t[i - 1] + delta_time;
-            break;
+            time[i] = time[i - 1] + delta_time;
         }
-        adc_value[i] =
-            (7.0 * 2.0 * PI * t[i]).sin() + (16.0 * 2.0 * PI * t[i]).cos();
+
+        adc_val[i] =
+            (7.0 * 2.0 * PI * time[i] as f64).sin() + (16.0 * 2.0 * PI * time[i] as f64).cos();
     }
-    (t, adc_value)
+
+    (time, adc_val)
 }
