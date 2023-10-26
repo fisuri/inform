@@ -2,3 +2,4 @@ package-lock.json
 rustdev/app*/target
 rustdev/guessing_game/target
 rustdev/generator/target
+rustdev/generator/src/plot
