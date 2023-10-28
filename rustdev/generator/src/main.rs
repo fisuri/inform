@@ -1,6 +1,5 @@
 pub mod generator;
 use generator::gen;
-use plotters::prelude::*;
 
 fn main() {
     const DELTA_TIME: f64 = 0.005; //Частота дискретизации сигнала
