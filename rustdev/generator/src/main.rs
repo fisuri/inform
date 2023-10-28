@@ -1,19 +1,18 @@
 pub mod generator;
 use generator::gen;
+use plotters::prelude::*;
 
 fn main() {
     const DELTA_TIME: f64 = 0.005; //Частота дискретизации сигнала
-    const TIME_LIMIT: f64 = 0.5; //Длительность считывания сигнала
-                                 //const FREQ: f64 = 7.0; //Частота согласно варианту
-                                 //const BIT: u8 = 16; //Разрядность АЦП
-                                 //Получение эталонного сигнала от генератора
+    const TIME_LIMIT: f64 = 0.6; //Длительность считывания сигнала
 
+    //Получение эталонного сигнала от генератора
     let (ideal_time, ideal_value) = gen(TIME_LIMIT, 0.00001);
     let (time, adc_value) = gen(TIME_LIMIT, DELTA_TIME);
 
-    let mut adc_value_integrated = vec![0.; adc_value.len()];
-    let mut adc_value_different = vec![0.; adc_value.len()];
-    let mut adc_value_integrated_sum = Vec::new();
+    let mut adc_value_different: Vec<f64> = vec![0.; adc_value.len()];
+    let mut adc_value_integrated: Vec<f64> = vec![0.; adc_value.len()];
+    let mut adc_value_integrated_sum: Vec<f64> = Vec::new();
     adc_value_integrated_sum.push(ideal_value[0]);
 
     println!("{:?}", ideal_value);
