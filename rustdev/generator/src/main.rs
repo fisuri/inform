@@ -18,7 +18,7 @@ fn main() {
     println!("{:?}", adc_value.len());
 
     for i in 1..adc_value.len() {
-        adc_value_integrated[i - 1] = ((adc_value[i] + adc_value[i - 1]) / 2.0) * DELTA_TIME;
+        adc_value_integrated[i - 1] = (adc_value[i] + adc_value[i - 1]) / 2.0 * DELTA_TIME;
         adc_value_integrated_sum.push(adc_value_integrated_sum[i - 1] + adc_value_integrated[i]);
         if i != adc_value.len() - 1 {
             adc_value_different[i] = (adc_value[i + 1] - adc_value[i - 1]) / 2.0 * DELTA_TIME;
