@@ -1,5 +1,6 @@
-pub mod generator;
+mod generator;
 use generator::gen;
+use std::io::{self, Read};
 
 fn main() {
     const DELTA_TIME: f64 = 0.005; //Частота дискретизации сигнала
@@ -14,8 +15,8 @@ fn main() {
     let mut adc_value_integrated_sum: Vec<f64> = Vec::new();
     adc_value_integrated_sum.push(ideal_value[0]);
 
-    println!("{:?}", ideal_value);
-    println!("{:?}", adc_value.len());
+    println!("ideal value{:?}", ideal_value);
+    println!("adc value {:?}", adc_value.len());
 
     for i in 1..adc_value.len() {
         adc_value_integrated[i - 1] = (adc_value[i] + adc_value[i - 1]) / 2.0 * DELTA_TIME;
@@ -41,4 +42,8 @@ fn main() {
         "Ускорение t = 0.5: {:?}",
         adc_value_different[(0.5 / DELTA_TIME).round() as usize]
     );
+
+    println!("Нажмите Enter для выхода");
+    let mut buffer = [0u8];
+    let _ = io::stdin().read_exact(&mut buffer).expect("Error input");
 }
