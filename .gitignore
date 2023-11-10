@@ -3,3 +3,4 @@ rustdev/app*/target
 rustdev/guessing_game/target
 rustdev/generator/target
 rustdev/generator/src/plot
+rustdev/turtle_game/target
