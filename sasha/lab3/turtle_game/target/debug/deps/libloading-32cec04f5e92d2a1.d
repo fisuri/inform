@@ -1,0 +1,11 @@
+/home/yaroslav/Документы/inform/rustdev/turtle_game/target/debug/deps/libloading-32cec04f5e92d2a1.rmeta: /home/yaroslav/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.6.7/src/lib.rs /home/yaroslav/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.6.7/src/os/mod.rs /home/yaroslav/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.6.7/src/os/unix/mod.rs /home/yaroslav/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.6.7/src/os/unix/consts.rs /home/yaroslav/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.6.7/src/changelog.rs /home/yaroslav/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.6.7/src/util.rs /home/yaroslav/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.6.7/src/error.rs
+
+/home/yaroslav/Документы/inform/rustdev/turtle_game/target/debug/deps/libloading-32cec04f5e92d2a1.d: /home/yaroslav/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.6.7/src/lib.rs /home/yaroslav/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.6.7/src/os/mod.rs /home/yaroslav/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.6.7/src/os/unix/mod.rs /home/yaroslav/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.6.7/src/os/unix/consts.rs /home/yaroslav/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.6.7/src/changelog.rs /home/yaroslav/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.6.7/src/util.rs /home/yaroslav/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.6.7/src/error.rs
+
+/home/yaroslav/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.6.7/src/lib.rs:
+/home/yaroslav/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.6.7/src/os/mod.rs:
+/home/yaroslav/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.6.7/src/os/unix/mod.rs:
+/home/yaroslav/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.6.7/src/os/unix/consts.rs:
+/home/yaroslav/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.6.7/src/changelog.rs:
+/home/yaroslav/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.6.7/src/util.rs:
+/home/yaroslav/.cargo/registry/src/index.crates.io-6f17d22bba15001f/libloading-0.6.7/src/error.rs:

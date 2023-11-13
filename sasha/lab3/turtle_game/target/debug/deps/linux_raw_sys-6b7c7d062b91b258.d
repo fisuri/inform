@@ -1,0 +1,9 @@
+/home/yaroslav/Документы/inform/rustdev/turtle_game/target/debug/deps/linux_raw_sys-6b7c7d062b91b258.rmeta: /home/yaroslav/.cargo/registry/src/index.crates.io-6f17d22bba15001f/linux-raw-sys-0.4.11/src/lib.rs /home/yaroslav/.cargo/registry/src/index.crates.io-6f17d22bba15001f/linux-raw-sys-0.4.11/src/elf.rs /home/yaroslav/.cargo/registry/src/index.crates.io-6f17d22bba15001f/linux-raw-sys-0.4.11/src/x86_64/errno.rs /home/yaroslav/.cargo/registry/src/index.crates.io-6f17d22bba15001f/linux-raw-sys-0.4.11/src/x86_64/general.rs /home/yaroslav/.cargo/registry/src/index.crates.io-6f17d22bba15001f/linux-raw-sys-0.4.11/src/x86_64/ioctl.rs
+
+/home/yaroslav/Документы/inform/rustdev/turtle_game/target/debug/deps/linux_raw_sys-6b7c7d062b91b258.d: /home/yaroslav/.cargo/registry/src/index.crates.io-6f17d22bba15001f/linux-raw-sys-0.4.11/src/lib.rs /home/yaroslav/.cargo/registry/src/index.crates.io-6f17d22bba15001f/linux-raw-sys-0.4.11/src/elf.rs /home/yaroslav/.cargo/registry/src/index.crates.io-6f17d22bba15001f/linux-raw-sys-0.4.11/src/x86_64/errno.rs /home/yaroslav/.cargo/registry/src/index.crates.io-6f17d22bba15001f/linux-raw-sys-0.4.11/src/x86_64/general.rs /home/yaroslav/.cargo/registry/src/index.crates.io-6f17d22bba15001f/linux-raw-sys-0.4.11/src/x86_64/ioctl.rs
+
+/home/yaroslav/.cargo/registry/src/index.crates.io-6f17d22bba15001f/linux-raw-sys-0.4.11/src/lib.rs:
+/home/yaroslav/.cargo/registry/src/index.crates.io-6f17d22bba15001f/linux-raw-sys-0.4.11/src/elf.rs:
+/home/yaroslav/.cargo/registry/src/index.crates.io-6f17d22bba15001f/linux-raw-sys-0.4.11/src/x86_64/errno.rs:
+/home/yaroslav/.cargo/registry/src/index.crates.io-6f17d22bba15001f/linux-raw-sys-0.4.11/src/x86_64/general.rs:
+/home/yaroslav/.cargo/registry/src/index.crates.io-6f17d22bba15001f/linux-raw-sys-0.4.11/src/x86_64/ioctl.rs:

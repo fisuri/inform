@@ -1,0 +1,1 @@
+C:\Users\yaroslav\Documents\inform\rustdev\generator\target\debug\generator.exe: C:\Users\yaroslav\Documents\inform\rustdev\generator\src\generator.rs C:\Users\yaroslav\Documents\inform\rustdev\generator\src\main.rs
