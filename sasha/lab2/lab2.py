@@ -3,7 +3,7 @@ import generator as gen
 
 dt = 0.01    #  Период дискретизации сигнала
 t_lim = 0.6   # Длительность считывания сигнала
-bit = 16    # Разрядность АЦП
+
 ideal_t, ideal_val = gen.ADC(t_lim, 0.00001)  #Получение эталонного сигнала от генератора
 
 t, ADC_val = gen.ADC(t_lim,dt)               #Получение оцифроанного сигнала
@@ -20,6 +20,7 @@ print('Пройденный путь в t = 0.1: ', ADC_val_integrated[int(0.1/d
 print('Пройденный путь в t = 0.5: ', ADC_val_integrated[int(0.5/dt)])
 print('Ускорение в t = 0.1: ', ADC_val_diffrerentiated[int(0.1/dt)])
 print('Ускорение в t = 0.5: ', ADC_val_diffrerentiated[int(0.5/dt)])
+print('Ускорение в t = 0.1: ', ADC_val_diffrerentiated)
 
 plt.figure(figsize=(12, 9))
 plt.subplot(3, 1, 1)
