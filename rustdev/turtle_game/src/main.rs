@@ -1,5 +1,5 @@
 use std::time::Instant;
-use turtle::{Drawing, Point, Turtle};
+use turtle::{Point, Turtle};
 
 fn main() {
     const DELTA_TIME: f64 = 0.016;
@@ -14,7 +14,7 @@ fn main() {
     let mut v_x: f64 = 20.0; // скорость в пикселях по оси х
     let mut v_y: f64 = 20.0; // скорость в пикселях по оси y
     let mut f_x: f64 = 0.0; // сила действующая по оси х
-    let mut f_y: f64 = -MASS * G; // сила действующая по оси y
+    let f_y: f64 = -MASS * G; // сила действующая по оси y
     let mut a_x: f64 = 0.0; // ускорение в пикселях по оси х
     let mut a_y: f64 = 0.0; // ускорение в пикселях по оис у
 
@@ -74,6 +74,7 @@ impl TurtleDrawing {
         line.set_pen_size(3.0);
 
         line.hide();
+
         TurtleDrawing {
             x,
             y,
